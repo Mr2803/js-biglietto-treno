@@ -42,3 +42,7 @@ if(eta < 18){
   prezzoStandard = prezzoStandard;
   console.log("tu paghi : " , prezzoStandard , "€");
 }
+
+document.getElementById('ticket').innerHTML = "Salve babbano il prezzo del tuo biglietto è: " + prezzoStandard ;
+document.getElementById('ticket18').innerHTML = "Salve babbano il prezzo del tuo biglietto è: " + prezzoScontato18 ;
+document.getElementById('ticket65').innerHTML = "Salve babbano il prezzo del tuo biglietto è: " + prezzoScontato65 ;
