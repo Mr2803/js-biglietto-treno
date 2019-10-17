@@ -5,7 +5,7 @@
 // ma c’è uno sconto del 20% per i minorenni
 // e del 40% per gli over 65
 
-var km,eta,prezzo,under18,over65;
+var km,eta,prezzo,under18,over65,prezzoscontato18,prezzoscontato65;
 // chiedo numero km
 km = prompt("Quanti chilometri devi percorrere?");
 
@@ -21,6 +21,16 @@ console.log(prezzo);
 under18 = prezzo / 100 * 20 ;
 console.log(under18);
 //over65
+over65 = prezzo / 100 * 40 ;
+console.log(over65);
+
+if(eta < 18){
+  prezzoscontato18 = prezzo - under18;
+  console.log(prezzoscontato18);
+}if else(eta > 65){
+  prezzoscontato65 = prezzo - over65;
+  console.log(over65);
+}
 //
 // prezzoover65 = prezzo - 40%
 //
