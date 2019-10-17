@@ -34,23 +34,24 @@ console.log("sconto per over65 : " , over65 , "€");
 silente = parseFloat(prezzoStandard / 100 * 100);
 console.log("sconto silente : " , silente , "€");
 
+// imposto le condizioni
 if(eta < 18){
   prezzoScontato18 = prezzoStandard - under18;
-  console.log("questo è il prezzo per gli under18: " , prezzoScontato18 , "€");
+  // console.log("questo è il prezzo per gli under18: " , prezzoScontato18 , "€");
   document.getElementById('ticket').innerHTML = "Salve babbano il prezzo del tuo biglietto è: " + prezzoScontato18 + "€" ;
 
 }else if(eta>100){
   prezzoScontatoSilente = prezzoStandard - silente;
-  console.log("questo è il prezzo per Silente: " , prezzoScontatoSilente , "€");
+  // console.log("questo è il prezzo per Silente: " , prezzoScontatoSilente , "€");
   document.getElementById('ticket').innerHTML = "Oddìo Silente è proprio lei ?!Per lei il prezzo del biglietto è : " + prezzoScontatoSilente + "€" ;
 
 }else if(eta > 65){
   prezzoScontato65 = prezzoStandard - over65;
-  console.log("questo è il prezzo per gli over65: " , prezzoScontato65 , "€");
+  // console.log("questo è il prezzo per gli over65: " , prezzoScontato65 , "€");
   document.getElementById('ticket').innerHTML = "Salve babbano il prezzo del tuo biglietto è: " + prezzoScontato65 + "€" ;
 
 }else{
   prezzoStandard = prezzoStandard;
-  console.log("tu paghi : " , prezzoStandard , "€");
+  // console.log("tu paghi : " , prezzoStandard , "€");
   document.getElementById('ticket').innerHTML = "Salve babbano il prezzo del tuo biglietto è: " + prezzoStandard + "€";
 }
