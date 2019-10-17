@@ -27,9 +27,9 @@ console.log(over65);
 if(eta < 18){
   prezzoscontato18 = prezzo - under18;
   console.log(prezzoscontato18);
-}if else(eta > 65){
+}else if(eta > 65){
   prezzoscontato65 = prezzo - over65;
-  console.log(over65);
+  console.log(prezzoscontato65);
 }
 //
 // prezzoover65 = prezzo - 40%
