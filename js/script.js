@@ -12,23 +12,23 @@ var km,eta,prezzoStandard,under18,over65,prezzoScontato18,prezzoScontato65;
 
 // chiedo numero km
 km = prompt("Quanti chilometri devi percorrere?");
-console.log("questa è la distanza che devi percorrere: " + km + "km");
+console.log("questa è la distanza che devi percorrere: " , km , "km");
 
 // chiedo età
 eta = prompt("Quanti anni hai?");
-console.log("questa è la tua età: " + eta);
+console.log(eta);
 
 // prezzo standard
-prezzoStandard = 0.21* km;
-console.log("prezzo standard: " + prezzoStandard + "€");
+prezzoStandard = parseFloat(0.21* km);
+console.log("prezzo standard: ", prezzoStandard, "€");
 
 // sconto under18
-under18 = prezzoStandard / 100 * 20 ;
-console.log("sconto per under18 : " + under18 + "€");
+under18 = parseFloat(prezzoStandard / 100 * 20) ;
+console.log("sconto per under18 : " , under18 , "€");
 
 // sconto over65
-over65 = prezzoStandard / 100 * 40 ;
-console.log("sconto per over65 : " + over65 + "€");
+over65 = parseFloat(prezzoStandard / 100 * 40) ;
+console.log("sconto per over65 : " , over65 , "€");
 
 if(eta < 18){
   prezzoScontato18 = prezzoStandard - under18;
@@ -40,5 +40,5 @@ if(eta < 18){
 
 }else{
   prezzoStandard = prezzoStandard;
-  console.log("tu paghi : " + prezzoStandard + "€");
+  console.log("tu paghi : " , prezzoStandard , "€");
 }
