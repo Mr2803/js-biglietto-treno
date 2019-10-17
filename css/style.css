@@ -8,5 +8,33 @@ body{
   justify-content: center;
   background: url(../img/155771.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   align-items: center;
+  font-family: "harrypotter"
+}
+
+
+@font-face {
+  font-family: harrypotter;
+  src: url(../font/HARRYP__.TTF);
+}
+
+h1{
+  font-size: 100px;
+  color:#F2C805;
+}
+
+.biglietto{
+  height: 400px;
+  width:50%;
+  background-image: url(../img/biglietto.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-size: 25px;
+  padding:50px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid;
+  box-shadow: 5px 10px;
+
 }
