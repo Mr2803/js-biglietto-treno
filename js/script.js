@@ -19,7 +19,7 @@ eta = prompt("Quanti anni hai?");
 console.log("questa è la tua età: " + eta);
 
 // prezzo standard
-prezzoStandard = 2* km;
+prezzoStandard = 0.21* km;
 console.log("prezzo standard: " + prezzoStandard + "€");
 
 // sconto under18
@@ -35,7 +35,7 @@ if(eta < 18){
   console.log("questo è il prezzo per gli under18: " + prezzoScontato18 + "€");
 
 }else if(eta > 65){
-  prezzoScontato65 = prezzostandard - over65;
+  prezzoScontato65 = prezzoStandard - over65;
   console.log("questo è il prezzo per gli over65: " + prezzoScontato65 + "€");
 
 }else{
