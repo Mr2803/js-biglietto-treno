@@ -26,9 +26,9 @@ if(eta < 18){
   under18 = parseFloat(prezzoStandard / 100 * 20) ;
   prezzoScontato18 = prezzoStandard - under18;
   // console.log("questo è il prezzo per gli under18: " , prezzoScontato18 , "€");
-  document.getElementById('ticket').innerHTML = "Salve babbano il prezzo del tuo biglietto è: " + prezzoScontato18 + "€" ;
+  document.getElementById('ticket').innerHTML = "Salve aspirante mago il prezzo del tuo biglietto è: " + prezzoScontato18 + "€" ;
 
-}else if(eta>100){
+}else if(eta>100 ){
   silente = parseFloat(prezzoStandard / 100 * 100);
   prezzoScontatoSilente = prezzoStandard - silente;
   // console.log("questo è il prezzo per Silente: " , prezzoScontatoSilente , "€");
@@ -38,10 +38,10 @@ if(eta < 18){
   over65 = parseFloat(prezzoStandard / 100 * 40) ;
   prezzoScontato65 = prezzoStandard - over65;
   // console.log("questo è il prezzo per gli over65: " , prezzoScontato65 , "€");
-  document.getElementById('ticket').innerHTML = "Salve babbano il prezzo del tuo biglietto è: " + prezzoScontato65 + "€" ;
+  document.getElementById('ticket').innerHTML = "Salve aspirante mago il prezzo del tuo biglietto è: " + prezzoScontato65 + "€" ;
 
 }else{
   prezzoStandard = prezzoStandard;
   // console.log("tu paghi : " , prezzoStandard , "€");
-  document.getElementById('ticket').innerHTML = "Salve babbano il prezzo del tuo biglietto è: " + prezzoStandard + "€";
+  document.getElementById('ticket').innerHTML = "Salve aspirante mago il prezzo del tuo biglietto è: " + prezzoStandard + "€";
 }
