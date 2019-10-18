@@ -14,10 +14,13 @@
       <h1>Biglietto per Hogwarts</h1>
       <div class="row debug shadow">
         <div class="col-3 dashed debug">
-          <p>Numero biglietto</p>
+          <div class="validation d-flex flex-column justify-content-around">
+            <p>Numero biglietto</p>
           <p id="random"></p>
           <div id="qr-code">
             <img src="img\frame.svg" alt="">
+            </div>
+            <button type="button" class="btn btn-primary btn-block"  id="convalida" onclick="convalida()">Convalida biglietto</button>
 
           </div>
         </div>

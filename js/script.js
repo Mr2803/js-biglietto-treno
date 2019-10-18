@@ -11,6 +11,12 @@ var km,eta,prezzoStandard,under18,over65,silente,prezzoScontato18,prezzoScontato
 
 // creo il random per il codice Biglietto
 numRand = Math.floor(Math.random() * 1000000000000);
+document.getElementById('random').innerHTML = numRand;
+
+//creo funzione per convalida Biglietto
+function convalida(){
+  document.getElementById('convalida').style = "background:green";
+}
 
 // chiedo numero km
 km = parseInt(prompt("Quanti chilometri devi percorrere?"));
@@ -51,4 +57,3 @@ prezzoStandard = parseFloat(0.21* km);
 
 
 // inserisco il numero di biglietto random in pagina
-document.getElementById('random').innerHTML = numRand;

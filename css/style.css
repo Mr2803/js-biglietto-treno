@@ -26,13 +26,20 @@ h1{
   font-family: "harrypotter";
 }
 
+
+
 .shadow{
   box-shadow: 0 0 30px #000;
+}
+
+.validation{
+  height: 100%;
 }
 
 .dashed{
   border-right : 1px dashed black
 }
+
 
 /* .biglietto{
   min-height: 400px;
