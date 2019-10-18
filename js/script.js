@@ -7,7 +7,7 @@
 // e del 40% per gli over 65
 
 // dichiarazione variabili
-var km,eta,prezzoStandard,under18,over65,silente,prezzoScontato18,prezzoScontato65,prezzoScontatoSilente,numRand;
+var nome,cognome,km,eta,prezzoStandard,under18,over65,silente,prezzoScontato18,prezzoScontato65,prezzoScontatoSilente,numRand;
 
 // creo il random per il codice Biglietto
 numRand = Math.floor(Math.random() * 1000000000000);
@@ -16,14 +16,24 @@ document.getElementById('random').innerHTML = numRand;
 //creo funzione per convalida Biglietto
 function convalida(){
   document.getElementById('convalida').style = "background:green";
+  document.getElementById('convalida').innerHTML = "Biglietto convalidato";
 }
+
+//chiedo nome
+nome = prompt("Buongiorno, come ti chiami?");
+document.getElementById('nome').innerHTML = nome;
+//chiedo cognome
+cognome = prompt("E qual è il tuo cognome?");
+document.getElementById('cognome').innerHTML = cognome;
 
 // chiedo numero km
 km = parseInt(prompt("Quanti chilometri devi percorrere?"));
+document.getElementById('tratta').innerHTML = km + "km"
 // console.log("questa è la distanza che devi percorrere: " , km , "km");
 
 // chiedo età
 eta = parseInt(prompt("Quanti anni hai?"));
+document.getElementById('anni').innerHTML = eta + "anni"
 // console.log("questa è la tua età: ",eta);
 
 // prezzo standard

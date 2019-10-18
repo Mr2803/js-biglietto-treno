@@ -40,6 +40,16 @@ h1{
   border-right : 1px dashed black
 }
 
+.col-8.d-flex.flex-column span{
+  margin-bottom: 20px;
+}
+
+.img{
+  border : 1px solid black;
+  height: 100%;
+  min-height:
+}
+
 
 /* .biglietto{
   min-height: 400px;
