@@ -2,12 +2,12 @@ body{
   margin:0;
   padding:0;
   box-sizing: border-box;
-
   background: url(../img/155771.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
   background-attachment: fixed;
+  color :white;
 }
 
 .debug{
