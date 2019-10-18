@@ -7,7 +7,10 @@
 // e del 40% per gli over 65
 
 // dichiarazione variabili
-var km,eta,prezzoStandard,under18,over65,silente,prezzoScontato18,prezzoScontato65,prezzoScontatoSilente;
+var km,eta,prezzoStandard,under18,over65,silente,prezzoScontato18,prezzoScontato65,prezzoScontatoSilente,numRand;
+
+// creo il random per il codice Biglietto
+numRand = Math.floor(Math.random() * 1000000000000);
 
 // chiedo numero km
 km = parseInt(prompt("Quanti chilometri devi percorrere?"));
@@ -22,26 +25,30 @@ prezzoStandard = parseFloat(0.21* km);
 // console.log("prezzo standard: ", prezzoStandard, "€");
 
 // imposto le condizioni
-if(eta < 18){
-  under18 = parseFloat(prezzoStandard / 100 * 20) ;
-  prezzoScontato18 = prezzoStandard - under18;
-  // console.log("questo è il prezzo per gli under18: " , prezzoScontato18 , "€");
-  document.getElementById('ticket').innerHTML = "Salve aspirante mago il prezzo del tuo biglietto è: " + prezzoScontato18 + "€" ;
+// if(eta < 18){
+//   under18 = parseFloat(prezzoStandard / 100 * 20) ;
+//   prezzoScontato18 = prezzoStandard - under18;
+//   // console.log("questo è il prezzo per gli under18: " , prezzoScontato18 , "€");
+//   document.getElementById('ticket').innerHTML = "Salve aspirante mago il prezzo del tuo biglietto è: " + prezzoScontato18 + "€" ;
 
-}else if(eta>100 ){
-  silente = parseFloat(prezzoStandard / 100 * 100);
-  prezzoScontatoSilente = prezzoStandard - silente;
-  // console.log("questo è il prezzo per Silente: " , prezzoScontatoSilente , "€");
-  document.getElementById('ticket').innerHTML = "Oddìo Silente è proprio lei ?!Per lei il prezzo del biglietto è : " + prezzoScontatoSilente + "€" ;
+// }else if(eta>100 ){
+//   silente = parseFloat(prezzoStandard / 100 * 100);
+//   prezzoScontatoSilente = prezzoStandard - silente;
+//   // console.log("questo è il prezzo per Silente: " , prezzoScontatoSilente , "€");
+//   document.getElementById('ticket').innerHTML = "Oddìo Silente è proprio lei ?!Per lei il prezzo del biglietto è : " + prezzoScontatoSilente + "€" ;
+//
+// }else if(eta > 65){
+//   over65 = parseFloat(prezzoStandard / 100 * 40) ;
+//   prezzoScontato65 = prezzoStandard - over65;
+//   // console.log("questo è il prezzo per gli over65: " , prezzoScontato65 , "€");
+//   document.getElementById('ticket').innerHTML = "Salve aspirante mago il prezzo del tuo biglietto è: " + prezzoScontato65 + "€" ;
+//
+// }else{
+//   prezzoStandard = prezzoStandard;
+//   // console.log("tu paghi : " , prezzoStandard , "€");
+//   document.getElementById('ticket').innerHTML = "Salve aspirante mago il prezzo del tuo biglietto è: " + prezzoStandard + "€";
+// }
 
-}else if(eta > 65){
-  over65 = parseFloat(prezzoStandard / 100 * 40) ;
-  prezzoScontato65 = prezzoStandard - over65;
-  // console.log("questo è il prezzo per gli over65: " , prezzoScontato65 , "€");
-  document.getElementById('ticket').innerHTML = "Salve aspirante mago il prezzo del tuo biglietto è: " + prezzoScontato65 + "€" ;
 
-}else{
-  prezzoStandard = prezzoStandard;
-  // console.log("tu paghi : " , prezzoStandard , "€");
-  document.getElementById('ticket').innerHTML = "Salve aspirante mago il prezzo del tuo biglietto è: " + prezzoStandard + "€";
-}
+// inserisco il numero di biglietto random in pagina
+document.getElementById('random').innerHTML = numRand;
