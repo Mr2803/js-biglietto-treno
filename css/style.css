@@ -26,7 +26,7 @@ h1{
 
 .biglietto{
   min-height: 400px;
-  background-image: url(../img/biglietto.png);
+  background-color: #EEE6D9;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -39,10 +39,19 @@ h1{
   letter-spacing: 0.2rem;
 }
 
+.rip{
+  width:30%;
+  border-right: 2px solid black;
+}
+
+.ticket-glob{
+  width:60%;
+}
+
 span{
   font-family: sans-serif;
   color:#2B232B;
-  font-size: 30px;
-  width: 60%;
+  font-size: 20px;
+  width: 70%;
   display:block;
 }
