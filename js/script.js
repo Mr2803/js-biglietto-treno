@@ -48,6 +48,17 @@ prezzoStandard = parseFloat(0.21* km);
 // console.log("prezzo standard: ", prezzoStandard, "€");
 
 // imposto le condizioni
+if(eta > 12){
+function show(){
+  document.getElementById('ticket').style = "text-shadow: 0 0 0px white";
+  document.getElementById('ticket').style = "color:white";
+  document.getElementById('ticket').style.transition = "all 3s";
+  }
+}else if(eta < 12){
+  function show(){
+    document.getElementById('notwizard').innerHTML = "Mi dispiace , ma tu non sei un mago , torna a casa!";
+  }
+}
 if(eta < 18){
   under18 = parseFloat(prezzoStandard / 100 * 20) ;
   prezzoScontato18 = prezzoStandard - under18;
@@ -89,11 +100,6 @@ if(eta < 18){
   }
 }
 
-function show(){
-  document.getElementById('ticket').style = "text-shadow: 0 0 0px white";
-  document.getElementById('ticket').style = "color:white";
-  document.getElementById('ticket').style.transition = "all 2s";
-}
 
 
 

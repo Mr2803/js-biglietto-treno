@@ -31,6 +31,7 @@ h1{
   box-shadow: 0 0 30px #000;
   background: rgba(174, 176, 175, 0.48);
   border: 1px solid black;
+  border-radius: 10px;
 }
 
 .validation{
