@@ -43,10 +43,15 @@ h1{
 }
 
 .img{
-  border : 1px solid black;
+  border : 10px double black;
   height: 100%;
 }
 
 .img img{
   width:100%;
+}
+
+.my_blur{
+   text-shadow: 0 0 5px white;
+   color: transparent
 }

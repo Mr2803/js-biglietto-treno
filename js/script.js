@@ -89,5 +89,12 @@ if(eta < 18){
   }
 }
 
+function show(){
+  document.getElementById('ticket').style = "text-shadow: 0 0 0px white";
+  document.getElementById('ticket').style = "color:white";
+  document.getElementById('ticket').style.transition = "all 2s";
+}
+
+
 
 // inserisco il numero di biglietto random in pagina
