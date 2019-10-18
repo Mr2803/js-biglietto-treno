@@ -97,4 +97,5 @@ function show(){
 
 
 
+
 // inserisco il numero di biglietto random in pagina
