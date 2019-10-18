@@ -48,6 +48,8 @@ prezzoStandard = parseFloat(0.21* km);
 // console.log("prezzo standard: ", prezzoStandard, "€");
 
 // imposto le condizioni
+
+//condizioni per età superiore o inferiore a 12anni
 if(eta > 12){
 function show(){
   document.getElementById('ticket').style = "text-shadow: 0 0 0px white";
