@@ -7,7 +7,7 @@
 // e del 40% per gli over 65
 
 // dichiarazione variabili
-var nome,cognome,km,eta,prezzoStandard,under18,over65,silente,prezzoScontato18,prezzoScontato65,prezzoScontatoSilente,numRand;
+var nome,cognome,km,eta,prezzoStandard,under18,over65,silente,prezzoScontato18,prezzoScontato65,prezzoScontatoSilente,numRand,sesso;
 
 // creo il random per il codice Biglietto
 numRand = Math.floor(Math.random() * 1000000000000);
@@ -36,6 +36,9 @@ eta = parseInt(prompt("Quanti anni hai?"));
 document.getElementById('anni').innerHTML = eta + " anni"
 // console.log("questa è la tua età: ",eta);
 
+sesso = prompt("Sei un uomo o una donna? m/f");
+document.getElementById('m_f').innerHTML = "prova"
+
 // prezzo standard
 prezzoStandard = parseFloat(0.21* km);
 // console.log("prezzo standard: ", prezzoStandard, "€");
@@ -44,14 +47,27 @@ prezzoStandard = parseFloat(0.21* km);
 if(eta < 18){
   under18 = parseFloat(prezzoStandard / 100 * 20) ;
   prezzoScontato18 = prezzoStandard - under18;
+  if(sesso === "m" || sesso === "M"){
+    document.getElementById('foto').innerHTML = "<img src='img/harry-potter-700x467.jpg'>"
+  }else if(sesso === "f" || sesso === "F"){
+    document.getElementById('foto').innerHTML = "<img src='img/hermione.jpg'>"
+  }
+
   // console.log("questo è il prezzo per gli under18: " , prezzoScontato18 , "€");
   document.getElementById('ticket').innerHTML = "Salve aspirante mago il prezzo del tuo biglietto è: " + prezzoScontato18 + "€" ;
 
 }else if(eta>100 ){
   silente = parseFloat(prezzoStandard / 100 * 100);
   prezzoScontatoSilente = prezzoStandard - silente;
+  if(sesso === "m" || sesso === "M"){
+    document.getElementById('foto').innerHTML = "<img src='img/silente.jpg'>"
+    document.getElementById('ticket').innerHTML = "Oddìo Silente è proprio lei ?!Per lei il prezzo del biglietto è : " + prezzoScontatoSilente + "€" ;
+  }else if(sesso === "f" || sesso === "F"){
+    document.getElementById('foto').innerHTML = "<img src='img/mcgranitt.jpg'>"
+    document.getElementById('ticket').innerHTML = "Oddìo Professoressa Mcgranitt è proprio lei ?!Per lei il prezzo del biglietto è : " + prezzoScontatoSilente + "€" ;
+  }
   // console.log("questo è il prezzo per Silente: " , prezzoScontatoSilente , "€");
-  document.getElementById('ticket').innerHTML = "Oddìo Silente è proprio lei ?!Per lei il prezzo del biglietto è : " + prezzoScontatoSilente + "€" ;
+
 
 }else if(eta > 65){
   over65 = parseFloat(prezzoStandard / 100 * 40) ;

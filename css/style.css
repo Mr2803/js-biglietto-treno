@@ -47,48 +47,6 @@ h1{
   height: 100%;
 }
 
-
-/* .biglietto{
-  min-height: 400px;
-  background-color: #EEE6D9;
-  font-weight: bold;
-  text-align: center;
-  box-shadow: 0 0 30px #000;
-  display:flex;
-  align-items: center;
-  letter-spacing: 0.2rem;
-  border-radius: 10px;
+.img img{
+  width:100%;
 }
-
-.rip{
-  min-height: 400px;
-  width:30%;
-  border-right: 2px dashed black;
-}
-
-.foto-dati{
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.foto{
-  border:1px solid black;
-  padding:80px;
-  width:50px;
-  height: 50px;
-
-}
-
-form{
-  display:flex;
-  flex-direction: column;
-}
-
-span{
-  font-family: sans-serif;
-  color:#2B232B;
-  font-size: 20px;
-  width: 70%;
-  display:block;
-} */
