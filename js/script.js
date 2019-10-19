@@ -33,8 +33,7 @@ document.getElementById('tratta').innerHTML = km + " km"
 
 // chiedo età
 eta = parseInt(prompt("Quanti anni hai?"));
-document.getElementById('anni').innerHTML = eta + " anni"
-// console.log("questa è la tua età: ",eta);
+document.getElementById('anni').innerHTML = eta + " anni";
 
 sesso = prompt("Sei un uomo o una donna? m/f");
 if(sesso == "m" || sesso == "M"){
@@ -45,30 +44,28 @@ if(sesso == "m" || sesso == "M"){
 
 // prezzo standard
 prezzoStandard = parseFloat(0.21* km);
-// console.log("prezzo standard: ", prezzoStandard, "€");
 
-// imposto le condizioni
+// Condizioni
 
-//condizioni per età superiore o inferiore a 12anni
+//condizione per età inferiore a 12 anni
 if(eta < 12){
-  document.getElementById('foto').innerHTML = "<img src='img/puntointerrogativo.jpg'>"
   function show(){
     document.getElementById('notwizard').innerHTML = "Mi dispiace , ma tu non sei un mago , torna a casa!";
-      document.getElementById('hidden').style.transition = "all 8s";
+    document.getElementById('hidden').style.transition = "all 8s";
     document.getElementById('hidden').style.opacity = "0";
   }
   function convalida(){
     document.getElementById('convalida').style = "background:black";
     document.getElementById('convalida').innerHTML = "Biglietto non valido";
   }
-}else if(eta > 12){
+// Condizione generica per far ereditare alle altre le stesse proprietà
+}else{
 function show(){
   document.getElementById('ticket').style = "text-shadow: 0 0 0px white";
   document.getElementById('ticket').style = "color:white";
   document.getElementById('ticket').style.transition = "all 3s";
   }
 }
-
 // condizioni per applicazione sconti
 if(eta>12 && eta < 18){
   under18 = parseFloat(prezzoStandard / 100 * 20) ;
@@ -94,10 +91,10 @@ if(eta>12 && eta < 18){
   over65 = parseFloat(prezzoStandard / 100 * 40) ;
   prezzoScontato65 = prezzoStandard - over65;
   if(sesso === "m" || sesso === "M"){
-    document.getElementById('foto').innerHTML = "<img src='img/piton.jpg'>"
+    document.getElementById('foto').innerHTML = "<img src='img/piton.jpg'>";
     document.getElementById('ticket').innerHTML = "Salve mago il prezzo del tuo biglietto è: " + prezzoScontato65 + "€" ;
   }else if(sesso === "f" || sesso === "F"){
-    document.getElementById('foto').innerHTML = "<img src='img/mcgranitt.jpg'>"
+    document.getElementById('foto').innerHTML = "<img src='img/dolores.jpg'>"
     document.getElementById('ticket').innerHTML = "Salve maga il prezzo del tuo biglietto è: " + prezzoScontato65 + "€" ;
   }
 }else{
