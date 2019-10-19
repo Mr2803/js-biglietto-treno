@@ -2,7 +2,7 @@ Combinazioni
 
 1.var eta < di 12 anni 
  mi aspetto che :
--Cliccando sulla bacchetta compare un messaggio con scritto tu non sei un mago e gradualmente scompare tutto il biglietto. 
+-Cliccando sulla bacchetta compaia un messaggio con scritto tu non sei un mago e gradualmente scompare tutto il biglietto. 
 -Se cliccassi sul bottone di convalida diventerebbe nero con scritto biglietto non valido.
 
 (condizione generale per scritta chiaramente leggibile e bottone convalida)
