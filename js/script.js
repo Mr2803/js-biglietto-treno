@@ -50,15 +50,9 @@ prezzoStandard = parseFloat(0.21* km);
 // imposto le condizioni
 
 //condizioni per età superiore o inferiore a 12anni
-if(eta > 12){
-function show(){
-  document.getElementById('ticket').style = "text-shadow: 0 0 0px white";
-  document.getElementById('ticket').style = "color:white";
-  document.getElementById('ticket').style.transition = "all 3s";
-  }
-}else if(eta < 12){
+if(eta < 12){
+  document.getElementById('foto').innerHTML = "<img src='img/puntointerrogativo.jpg'>"
   function show(){
-    document.getElementById('foto').innerHTML = "<img src='img/bianco-punto-interrogativo-su-uno-sfondo-circolare-nero_318-35996.jpg'>"
     document.getElementById('notwizard').innerHTML = "Mi dispiace , ma tu non sei un mago , torna a casa!";
       document.getElementById('hidden').style.transition = "all 8s";
     document.getElementById('hidden').style.opacity = "0";
@@ -66,6 +60,12 @@ function show(){
   function convalida(){
     document.getElementById('convalida').style = "background:black";
     document.getElementById('convalida').innerHTML = "Biglietto non valido";
+  }
+}else if(eta > 12){
+function show(){
+  document.getElementById('ticket').style = "text-shadow: 0 0 0px white";
+  document.getElementById('ticket').style = "color:white";
+  document.getElementById('ticket').style.transition = "all 3s";
   }
 }
 
@@ -110,9 +110,3 @@ if(eta>12 && eta < 18){
     document.getElementById('ticket').innerHTML = "Salve maga in erba il prezzo del tuo biglietto è: " + prezzoStandard + "€";
   }
 }
-
-
-
-
-
-// inserisco il numero di biglietto random in pagina
