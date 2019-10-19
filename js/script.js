@@ -59,6 +59,8 @@ function show(){
 }else if(eta < 12){
   function show(){
     document.getElementById('notwizard').innerHTML = "Mi dispiace , ma tu non sei un mago , torna a casa!";
+      document.getElementById('hidden').style.transition = "all 7s";
+    document.getElementById('hidden').style.opacity = "0";
   }
   function convalida(){
     document.getElementById('convalida').style = "background:black";

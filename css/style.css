@@ -31,6 +31,7 @@ h1{
   background: rgba(174, 176, 175, 0.48);
   border: 1px solid black;
   border-radius: 10px;
+  opacity:1;
 }
 
 .dashed{
@@ -62,7 +63,7 @@ h1{
 
 .my_blur{
    text-shadow: 0 0 5px white;
-   color: transparent
+   color: transparent;
 }
 
 
