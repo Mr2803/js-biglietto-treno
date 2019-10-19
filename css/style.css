@@ -26,16 +26,11 @@ h1{
   font-family: "harrypotter";
 }
 
-
 .shadow{
   box-shadow: 0 0 30px #000;
   background: rgba(174, 176, 175, 0.48);
   border: 1px solid black;
   border-radius: 10px;
-}
-
-.validation{
-  height: 100%;
 }
 
 .dashed{
@@ -48,7 +43,6 @@ h1{
 
 .img{
   border : 10px double black;
-  height: 100%;
 }
 
 .img img{
@@ -59,3 +53,17 @@ h1{
    text-shadow: 0 0 5px white;
    color: transparent
 }
+
+
+
+@media (max-width: 768px) {
+
+  #qr-code img{
+    width:50%;
+  }
+
+  .dashed{
+    border-right: 0px;
+  }
+
+ }

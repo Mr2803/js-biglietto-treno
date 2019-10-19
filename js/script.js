@@ -38,9 +38,9 @@ document.getElementById('anni').innerHTML = eta + " anni"
 
 sesso = prompt("Sei un uomo o una donna? m/f");
 if(sesso == "m" || sesso == "M"){
-  document.getElementById('m_f').innerHTML = "uomo";
+  document.getElementById('m_f').innerHTML = " Uomo";
 }else{
-  document.getElementById('m_f').innerHTML = "donna";
+  document.getElementById('m_f').innerHTML = " Donna";
 }
 
 // prezzo standard
@@ -60,7 +60,13 @@ function show(){
   function show(){
     document.getElementById('notwizard').innerHTML = "Mi dispiace , ma tu non sei un mago , torna a casa!";
   }
+  function convalida(){
+    document.getElementById('convalida').style = "background:black";
+    document.getElementById('convalida').innerHTML = "Biglietto non valido";
+  }
 }
+
+// condizioni per applicazione sconti
 if(eta < 18){
   under18 = parseFloat(prezzoStandard / 100 * 20) ;
   prezzoScontato18 = prezzoStandard - under18;
