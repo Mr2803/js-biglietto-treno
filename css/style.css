@@ -75,7 +75,6 @@ a{
   text-decoration: none;
   color:rgb(145, 145, 145);
   transition : color .7s;
-  font-size: 20px
 }
 
 footer a:hover{
@@ -85,8 +84,6 @@ footer a:hover{
 
 
 @media (max-width: 768px) {
-
-
   .dashed{
     border-right: 0px;
     border-bottom : 1px dashed black
