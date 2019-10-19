@@ -37,8 +37,19 @@ h1{
   border-right : 1px dashed black
 }
 
+#random{
+  border : 1px solid rgba(150, 150, 150, 0.71);
+  background: black;
+  border-radius: 20px
+}
+
 .col-8.d-flex.flex-column span{
   margin-bottom: 20px;
+}
+
+.col-6.col-md-8.d-flex.justify-content-between.flex-column.text-left span#nome,
+.col-6.col-md-8.d-flex.justify-content-between.flex-column.text-left span#cognome{
+  text-transform: capitalize;
 }
 
 .img{
@@ -58,12 +69,10 @@ h1{
 
 @media (max-width: 768px) {
 
-  #qr-code img{
-    width:50%;
-  }
 
   .dashed{
     border-right: 0px;
+    border-bottom : 1px dashed black
   }
 
  }
