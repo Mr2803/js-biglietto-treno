@@ -59,7 +59,7 @@ function show(){
 }else if(eta < 12){
   function show(){
     document.getElementById('notwizard').innerHTML = "Mi dispiace , ma tu non sei un mago , torna a casa!";
-      document.getElementById('hidden').style.transition = "all 7s";
+      document.getElementById('hidden').style.transition = "all 8s";
     document.getElementById('hidden').style.opacity = "0";
   }
   function convalida(){
@@ -73,6 +73,7 @@ if(eta < 18){
   under18 = parseFloat(prezzoStandard / 100 * 20) ;
   prezzoScontato18 = prezzoStandard - under18;
   if(sesso === "m" || sesso === "M"){
+    document.getElementById('foto').innerHTML = "<img src='img/bianco-punto-interrogativo-su-uno-sfondo-circolare-nero_318-35996.jpg'>"
     document.getElementById('foto').innerHTML = "<img src='img/harry-potter-700x467.jpg'>"
     document.getElementById('ticket').innerHTML = "Salve aspirante mago il prezzo del tuo biglietto è: " + prezzoScontato18 + "€" ;
   }else if(sesso === "f" || sesso === "F"){
