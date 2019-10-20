@@ -35,6 +35,7 @@ document.getElementById('tratta').innerHTML = km + " km"
 eta = parseInt(prompt("Quanti anni hai?"));
 document.getElementById('anni').innerHTML = eta + " anni";
 
+
 sesso = prompt("Sei un uomo o una donna? m/f");
 if(sesso == "m" || sesso == "M"){
   document.getElementById('m_f').innerHTML = " Uomo";
@@ -72,7 +73,7 @@ if(eta>12 && eta < 18){
   prezzoScontato18 = prezzoStandard - under18;
   if(sesso === "m" || sesso === "M"){
     document.getElementById('foto').innerHTML = "<img src='img/harry-potter-700x467.jpg'>"
-    document.getElementById('ticket').innerHTML = "Salve aspirante mago il prezzo del tuo biglietto è: " + prezzoScontato18 + "€" ;
+    document.getElementById('ticket').innerHTML = "Salve aspirante mago il prezzo del tuo biglietto è: " + prezzoScontato18.toFixed(2) + "€" ;
   }else if(sesso === "f" || sesso === "F"){
     document.getElementById('foto').innerHTML = "<img src='img/hermione.jpg'>"
     document.getElementById('ticket').innerHTML = "Salve aspirante maga il prezzo del tuo biglietto è: " + prezzoScontato18.toFixed(2) + "€" ;
@@ -92,7 +93,7 @@ if(eta>12 && eta < 18){
   prezzoScontato65 = prezzoStandard - over65;
   if(sesso === "m" || sesso === "M"){
     document.getElementById('foto').innerHTML = "<img src='img/piton.jpg'>";
-    document.getElementById('ticket').innerHTML = "Salve mago il prezzo del tuo biglietto è: " + prezzoScontato65 + "€" ;
+    document.getElementById('ticket').innerHTML = "Salve mago il prezzo del tuo biglietto è: " + prezzoScontato65.toFixed(2) + "€" ;
   }else if(sesso === "f" || sesso === "F"){
     document.getElementById('foto').innerHTML = "<img src='img/molly.jpg'>"
     document.getElementById('ticket').innerHTML = "Salve maga il prezzo del tuo biglietto è: " + prezzoScontato65.toFixed(2) + "€" ;

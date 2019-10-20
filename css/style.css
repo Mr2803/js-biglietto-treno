@@ -10,9 +10,58 @@ body{
   color :white;
 }
 
-.debug{
-  border: 1px solid black;
+.shooting-star {
+  background-color: #ffb058;
+  background: linear-gradient(to right, #ffb058 0%, transparent 100%);
+  width: 100px;
+  height: 5px;
+  position:absolute;
+  border-radius: 200px;
+  right: 15%;
+  top: 15%;
+  animation: shooting-star 5s infinite;
 }
+@keyframes shooting-star {
+  0% {
+    transform: translate(0, 0) rotate(-150deg) scale(0.8);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(50px, 50px) rotate(-150deg) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0) rotate(-150deg) scale(0.8);
+    opacity: 0;
+  }
+}
+
+.shooting-star2 {
+  background-color: #ffb058;
+  background: linear-gradient(to right, #ffb058 0%, transparent 100%);
+  width: 100px;
+  height: 5px;
+  position:absolute;
+  border-radius: 200px;
+  right: 17%;
+  top: 25%;
+  animation: shooting-star2 6s infinite;
+}
+@keyframes shooting-star2 {
+  0% {
+    transform: translate(0, 0) rotate(-150deg) scale(0.8);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(50px, 50px) rotate(-150deg) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0) rotate(-150deg) scale(0.8);
+    opacity: 0;
+  }
+}
+
 
 
 @font-face {
@@ -38,7 +87,6 @@ h1{
   background: rgba(174, 176, 175, 0.48);
   border: 1px solid black;
   border-radius: 10px;
-  opacity:1;
 }
 
 ul li:first-child{
@@ -106,6 +154,9 @@ a{
 footer a:hover{
   color:rgb(222, 108, 82);
 }
+
+/* shooting star */
+
 
 
 
