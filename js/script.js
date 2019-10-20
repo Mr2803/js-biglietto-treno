@@ -22,18 +22,30 @@ function convalida(){
 //chiedo nome
 nome = prompt("Buongiorno, come ti chiami?");
 document.getElementById('nome').innerHTML = nome;
+if (nome.length < 1 || !isNaN(nome)){
+    alert("E tu saresti un mago ?Non sai nemmeno leggere! Inserisci il tuo nome.")
+}//condizione per obbligare a scrivere una parola e non lasciare il campo vuoto
+
 //chiedo cognome
 cognome = prompt("E qual è il tuo cognome?");
 document.getElementById('cognome').innerHTML = cognome;
+if (cognome.length < 1 || !isNaN(cognome)){
+  alert("E tu saresti un mago ?" + nome + "Non sai nemmeno leggere! Inserisci il tuo cognome.")
+}//condizione per obbligare a scrivere una parola e non lasciare il campo vuoto
 
 // chiedo numero km
 km = parseInt(prompt("Quanti chilometri devi percorrere?"));
-document.getElementById('tratta').innerHTML = km + " km"
-// console.log("questa è la distanza che devi percorrere: " , km , "km");
+document.getElementById('tratta').innerHTML = km + " km";
+if (isNaN(km)){
+  alert("E tu saresti un mago " + nome + " " + cognome + "? Non sai nemmeno leggere! Inserisci un valore numerico corretto.")
+}//condizione per obbligare a scrivere un numero nel campo km
 
 // chiedo età
 eta = parseInt(prompt("Quanti anni hai?"));
 document.getElementById('anni').innerHTML = eta + " anni";
+if (isNaN(eta)){
+  alert("E tu saresti un mago " + nome + " " + cognome + "? Non sai nemmeno leggere! Inserisci un valore numerico corretto.")
+}//condizione per obbligare a scrivere un numero nel campo età
 
 // chiedo il sesso
 sesso = prompt("Sei un uomo o una donna? m/f");
@@ -41,12 +53,9 @@ if(sesso == "m" || sesso == "M"){
   document.getElementById('m_f').innerHTML = " Uomo";
 }else if(sesso == "f" || sesso == "F"){
   document.getElementById('m_f').innerHTML = " Donna";
-}
-
-//condizione per imporre di scrivere nel campo del sesso M-m-F-f
-if(sesso !=="m" && sesso !=="M" && sesso !=="f" && sesso !=="F"){
-  alert("Inserisci un valore corretto : M-m o F-f")
-}
+}else if(sesso !=="m" && sesso !=="M" && sesso !=="f" && sesso !=="F"){
+  alert("E tu saresti un mago ?Non sai nemmeno leggere! Inserisci un valore corretto : M/m o F/f")
+}//condizione per obbligare a scrivere M-m-F-f
 
 // prezzo standard
 prezzoStandard = parseFloat(0.21* km);

@@ -1,3 +1,4 @@
+/* NOTE: Regole Generali */
 body{
   margin:0;
   padding:0;
@@ -14,7 +15,9 @@ body{
   font-family: harrypotter;
   src: url(../font/HARRYP__.TTF);
 }
+/* NOTE: Fine regole Generali */
 
+/* NOTE: Inizio stelle cadenti */
 .shooting-star {
   background-color: #ffb058;
   background: linear-gradient(to right, #ffb058 0%, transparent 100%);
@@ -26,6 +29,7 @@ body{
   top: 15%;
   animation: shooting-star 5s infinite;
 }
+
 @keyframes shooting-star {
   0% {
     transform: translate(0, 0) rotate(-150deg) scale(0.8);
@@ -52,6 +56,7 @@ body{
   top: 25%;
   animation: shooting-star2 6s infinite;
 }
+
 @keyframes shooting-star2 {
   0% {
     transform: translate(0, 0) rotate(-150deg) scale(0.8);
@@ -66,7 +71,7 @@ body{
     opacity: 0;
   }
 }
-
+/* NOTE: Fine stelle cadenti */
 
 .fa-cut{
   position:absolute;
@@ -125,7 +130,6 @@ ul li:first-child{
   padding:5px;
 }
 
-
 .img{
   border : 10px double black;
 }
@@ -154,10 +158,7 @@ footer a:hover{
   color:rgb(222, 108, 82);
 }
 
-/* shooting star */
-
-
-
+/* NOTE: Media Query */
 
 @media (max-width: 991px) {
   .dashed{
