@@ -98,7 +98,7 @@ footer a:hover{
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .dashed{
     border-right: 0px;
     border-bottom : 1px dashed black
