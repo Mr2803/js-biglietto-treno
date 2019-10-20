@@ -35,12 +35,17 @@ document.getElementById('tratta').innerHTML = km + " km"
 eta = parseInt(prompt("Quanti anni hai?"));
 document.getElementById('anni').innerHTML = eta + " anni";
 
-
+// chiedo il sesso
 sesso = prompt("Sei un uomo o una donna? m/f");
 if(sesso == "m" || sesso == "M"){
   document.getElementById('m_f').innerHTML = " Uomo";
-}else{
+}else if(sesso == "f" || sesso == "F"){
   document.getElementById('m_f').innerHTML = " Donna";
+}
+
+//condizione per imporre di scrivere nel campo del sesso M-m-F-f
+if(sesso !=="m" && sesso !=="M" && sesso !=="f" && sesso !=="F"){
+  alert("Inserisci un valore corretto : M-m o F-f")
 }
 
 // prezzo standard

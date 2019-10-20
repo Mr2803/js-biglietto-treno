@@ -10,6 +10,11 @@ body{
   color :white;
 }
 
+@font-face {
+  font-family: harrypotter;
+  src: url(../font/HARRYP__.TTF);
+}
+
 .shooting-star {
   background-color: #ffb058;
   background: linear-gradient(to right, #ffb058 0%, transparent 100%);
@@ -62,12 +67,6 @@ body{
   }
 }
 
-
-
-@font-face {
-  font-family: harrypotter;
-  src: url(../font/HARRYP__.TTF);
-}
 
 .fa-cut{
   position:absolute;
