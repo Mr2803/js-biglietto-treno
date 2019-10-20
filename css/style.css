@@ -34,6 +34,10 @@ h1{
   opacity:1;
 }
 
+ul li:first-child{
+  list-style-type: none;
+}
+
 .dashed{
   border-right : 1px dashed black
 }
@@ -48,10 +52,21 @@ h1{
   margin-bottom: 20px;
 }
 
-.col-6.col-md-8.d-flex.justify-content-between.flex-column.text-left span#nome,
-.col-6.col-md-8.d-flex.justify-content-between.flex-column.text-left span#cognome{
+.col-12.col-md-8.d-flex.justify-content-between.flex-column.text-left p#nome,
+.col-12.col-md-8.d-flex.justify-content-between.flex-column.text-left p#cognome{
   text-transform: capitalize;
 }
+
+.col-12.d-flex.justify-content-between.flex-column.text-left p#nome,
+.col-12.d-flex.justify-content-between.flex-column.text-left p#cognome,
+.col-12.d-flex.justify-content-between.flex-column.text-left p#tratta,
+.col-12.d-flex.justify-content-between.flex-column.text-left p#anni,
+.col-12.d-flex.justify-content-between.flex-column.text-left p#m_f{
+  background:white;
+  color:black;
+  padding:5px;
+}
+
 
 .img{
   border : 10px double black;
