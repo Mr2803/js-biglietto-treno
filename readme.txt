@@ -24,11 +24,11 @@ mi aspetto che:
 5. var eta > 65
 mi aspetto che :
 -venga applicato uno sconto al prezzo normale del biglietto pari al 40%
--se nel campo "sesso" inserisco valore m || M come immagine comparirà quella di Piton , diversamente se inserissi il valore f || F comparirebbe la professoressa Dolores
+-se nel campo "sesso" inserisco valore m || M come immagine comparirà quella di Piton , diversamente se inserissi il valore f || F comparirebbe la molly
 -vengono ereditate le condizioni di var eta >12
 
 6. condizione per esclusione ( tutte le altre possibilità)
 mi aspetto che :
 -non venga applicato nessuno sconto al prezzo del biglietto
--se nel campo "sesso" inserisco valore m || M come immagine comparirà quella di Sirius black , diversamente se inserissi il valore f || F comparirebbe Cho-chang
+-se nel campo "sesso" inserisco valore m || M come immagine comparirà quella di Sirius black , diversamente se inserissi il valore f || F comparirebbe ginny
 -vengono ereditate le condizioni di var eta >12

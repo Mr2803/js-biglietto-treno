@@ -94,7 +94,7 @@ if(eta>12 && eta < 18){
     document.getElementById('foto').innerHTML = "<img src='img/piton.jpg'>";
     document.getElementById('ticket').innerHTML = "Salve mago il prezzo del tuo biglietto è: " + prezzoScontato65 + "€" ;
   }else if(sesso === "f" || sesso === "F"){
-    document.getElementById('foto').innerHTML = "<img src='img/dolores.jpg'>"
+    document.getElementById('foto').innerHTML = "<img src='img/molly.jpg'>"
     document.getElementById('ticket').innerHTML = "Salve maga il prezzo del tuo biglietto è: " + prezzoScontato65.toFixed(2) + "€" ;
   }
 }else{
@@ -103,7 +103,7 @@ if(eta>12 && eta < 18){
     document.getElementById('foto').innerHTML = "<img src='img/Sirius-Black.jpg'>"
     document.getElementById('ticket').innerHTML = "Salve mago in erba il prezzo del tuo biglietto è: " + prezzoStandard + "€" ;
   }else if(sesso === "f" || sesso === "F"){
-    document.getElementById('foto').innerHTML = "<img src='img/cho-chang.jpg'>"
+    document.getElementById('foto').innerHTML = "<img src='img/ginny.jpg'>"
     document.getElementById('ticket').innerHTML = "Salve maga in erba il prezzo del tuo biglietto è: " + prezzoStandard + "€";
   }
 }

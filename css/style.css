@@ -25,7 +25,6 @@ body{
   left:0;
   top:99.2%;
   color:black;
-
 }
 
 h1{
@@ -44,6 +43,10 @@ h1{
 
 ul li:first-child{
   list-style-type: none;
+}
+
+.my_margin{
+  padding: 0 0 0 40px;
 }
 
 .dashed{
@@ -110,6 +113,10 @@ footer a:hover{
   .dashed{
     border-right: 0px;
     border-bottom : 1px dashed black
+  }
+  .my_overflow{
+    overflow-y: auto;
+    height: 150px;
   }
 }
 @media (min-width: 992px) {
