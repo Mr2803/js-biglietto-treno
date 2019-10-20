@@ -75,7 +75,7 @@ if(eta>12 && eta < 18){
     document.getElementById('ticket').innerHTML = "Salve aspirante mago il prezzo del tuo biglietto è: " + prezzoScontato18 + "€" ;
   }else if(sesso === "f" || sesso === "F"){
     document.getElementById('foto').innerHTML = "<img src='img/hermione.jpg'>"
-    document.getElementById('ticket').innerHTML = "Salve aspirante maga il prezzo del tuo biglietto è: " + prezzoScontato18 + "€" ;
+    document.getElementById('ticket').innerHTML = "Salve aspirante maga il prezzo del tuo biglietto è: " + prezzoScontato18.toFixed(2) + "€" ;
   }
 }else if(eta>100 ){
   silente = parseFloat(prezzoStandard / 100 * 100);
@@ -95,7 +95,7 @@ if(eta>12 && eta < 18){
     document.getElementById('ticket').innerHTML = "Salve mago il prezzo del tuo biglietto è: " + prezzoScontato65 + "€" ;
   }else if(sesso === "f" || sesso === "F"){
     document.getElementById('foto').innerHTML = "<img src='img/dolores.jpg'>"
-    document.getElementById('ticket').innerHTML = "Salve maga il prezzo del tuo biglietto è: " + prezzoScontato65 + "€" ;
+    document.getElementById('ticket').innerHTML = "Salve maga il prezzo del tuo biglietto è: " + prezzoScontato65.toFixed(2) + "€" ;
   }
 }else{
   prezzoStandard = prezzoStandard;

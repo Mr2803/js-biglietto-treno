@@ -20,6 +20,14 @@ body{
   src: url(../font/HARRYP__.TTF);
 }
 
+.fa-cut{
+  position:absolute;
+  left:0;
+  top:99.2%;
+  color:black;
+
+}
+
 h1{
   font-size: 100px;
   color:#F2C805;
@@ -103,5 +111,11 @@ footer a:hover{
     border-right: 0px;
     border-bottom : 1px dashed black
   }
-
- }
+}
+@media (min-width: 992px) {
+  .fa-cut{
+    transform: rotate(90deg);
+    left:98%;
+    top:0;
+  }
+}
