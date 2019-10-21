@@ -115,8 +115,8 @@ ul li:first-child{
   margin-bottom: 20px;
 }
 
-.col-12.col-md-8.d-flex.justify-content-between.flex-column.text-left p#nome,
-.col-12.col-md-8.d-flex.justify-content-between.flex-column.text-left p#cognome{
+.col-12.d-flex.justify-content-between.flex-column.text-left p#nome,
+.col-12.d-flex.justify-content-between.flex-column.text-left p#cognome{
   text-transform: capitalize;
 }
 
